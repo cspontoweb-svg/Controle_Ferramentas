@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <base target="_top">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Controle de Ferramentas e Equipamentos</title>
+  <?!= include('estilos'); ?>
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div class="brand-mark" aria-hidden="true">CE</div>
+      <div>
+        <p class="eyebrow">GESTÃO DE ATIVOS</p>
+        <h1>Controle de Ferramentas e Equipamentos</h1>
+      </div>
+      <span class="version">Versão 0.1.0</span>
+    </header>
+
+    <section class="welcome">
+      <div class="welcome-copy">
+        <p class="eyebrow">PLATAFORMA OPERACIONAL</p>
+        <h2>Controle centralizado para suas obras.</h2>
+        <p>Uma única plataforma para acompanhar equipamentos, movimentações,
+          inventários, manutenção e indicadores gerenciais.</p>
+      </div>
+      <div class="welcome-symbol" aria-hidden="true">▦</div>
+    </section>
+
+    <section class="status-panel" aria-labelledby="status-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">IMPLANTAÇÃO</p>
+          <h2 id="status-title">Fundação do sistema</h2>
+        </div>
+        <span class="status-pill">Em construção</span>
+      </div>
+      <p id="status-message" class="status-message">
+        Esta é a primeira etapa da construção. A interface operacional será
+        habilitada depois da implementação e validação de autenticação,
+        permissões e regras de movimentação.
+      </p>
+      <div class="progress-track" role="img" aria-label="Etapa 1 de 8">
+        <span></span>
+      </div>
+      <p class="progress-label">Etapa 1 de 8 — Fundação e estrutura de dados</p>
+    </section>
+
+    <section class="module-grid" aria-label="Módulos previstos">
+      <article class="module-card"><span>01</span><h3>Equipamentos</h3><p>Cadastro, patrimônio e QR Code.</p></article>
+      <article class="module-card"><span>02</span><h3>Movimentações</h3><p>Retirada, devolução e transferência.</p></article>
+      <article class="module-card"><span>03</span><h3>Manutenção</h3><p>Avarias, reparos e desmobilização.</p></article>
+      <article class="module-card"><span>04</span><h3>Inventário</h3><p>Conferência física e divergências.</p></article>
+      <article class="module-card"><span>05</span><h3>Administração</h3><p>Usuários, obras, frentes e tablets.</p></article>
+      <article class="module-card"><span>06</span><h3>Indicadores</h3><p>Dashboard e relatórios gerenciais.</p></article>
+    </section>
+
+    <footer>
+      <span>Controle de Ferramentas e Equipamentos</span>
+      <span>Ambiente de desenvolvimento — não utilizar ainda em operação real</span>
+    </footer>
+  </main>
+</body>
+</html>
