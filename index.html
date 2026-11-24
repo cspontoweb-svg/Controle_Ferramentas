@@ -88,7 +88,7 @@ function postApi(payload){
     function correlated(ev){
       let data=ev.data;
       if(typeof data==="string"){try{data=JSON.parse(data)}catch(_){return}}
-      if((ev.source!==frame.contentWindow&&ev.source!==window)||!data||data.requestId!==requestId)return;
+      if(!data || data.requestId !== requestId) return;
       clearTimeout(timer);window.removeEventListener("message",correlated);form.remove();
       if(data.ok)resolve(data);else reject(new Error(data.message||"Operação recusada pelo servidor."));
     }
